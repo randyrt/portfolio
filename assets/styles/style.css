@@ -1,13 +1,8 @@
 /*Paramètres généraux*/
-
-/*@font-face {
-  font-family: "font-reg";
-  src: url(../fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
-} */
-
 @font-face {
-  font-family: "font-bold";
-  src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+  font-family: "font-reg";
+  src: url(../fonts/OpenSans-VariableFont_wdth/wght.woff2) format("woff2"),
+    url(../fonts/OpenSans-VariableFont_wdth/wght.woff) format("woff");
 }
 
 * {
@@ -25,10 +20,11 @@ html {
 }
 
 body {
-  font-family: "font-bold", serif;
+  font-family: "font-bold", "serif" !important;
   background-color: #000101;
   color: #fefeff;
   transition: 0.7s ease-in-out;
+  font-weight: 900 !important;
 }
 
 h2 {
@@ -136,7 +132,6 @@ img:hover {
   transition-delay: 0.9s;
 }
 
-
 #h2-2 {
   transition-delay: 1.2s;
 }
@@ -168,14 +163,15 @@ header {
 }
 
 h1 {
-  font-size: calc(2rem + 8vh);
+  font-size: calc(5rem + 6vh) !important;
   font-size: "font-bold", serif;
   letter-spacing: 6px;
   color: #fefeff;
+  font-weight: 900 !important;
 }
 
 header h2 {
-  font-size: calc(1rem + 6.5vw);
+  font-size: calc(2rem + 6.5vw);
   margin: 18px 0;
   font-family: "font-bold", serif;
   text-align: left;
@@ -220,7 +216,6 @@ header h2 {
 .about strong {
   color: black;
   filter: brightness(100%);
-
 }
 
 .skills {
@@ -241,7 +236,7 @@ header h2 {
 
 .skills p {
   font-size: calc(1rem + 6vw);
-  font-family: "font-bold", serif;
+  font-family: "font-bold", serif !important;
   letter-spacing: 4px;
   background: #000101;
   color: #fefeff;
@@ -255,7 +250,6 @@ header h2 {
 
 .project-container {
   margin-top: 100px;
- 
 }
 
 .projects {
@@ -271,7 +265,6 @@ header h2 {
 
 #p2 {
   margin: 0 6vw 0 auto;
-
 }
 
 #p3 {
@@ -287,7 +280,7 @@ header h2 {
 }
 
 #p6 {
-   margin: 0 6vw 0 auto;
+  margin: 0 6vw 0 auto;
 }
 
 .projects img {
@@ -320,7 +313,7 @@ header h2 {
 
 .project-infos a:hover {
   color: rgb(4, 250, 250);
-  font-size: calc(1rem + 2px)
+  font-size: calc(1rem + 2px);
 }
 
 .project-infos p {
@@ -345,6 +338,7 @@ footer a {
   font-family: "font-bold", serif;
   color: rgba(217, 217, 217, 0.993);
   font-size: calc(1rem + 2vw);
+  margin-left: 10px;
 }
 
 footer a:hover {
@@ -376,5 +370,9 @@ footer a:hover {
 
 #thanks {
   color: #000101;
-  margin-top : 40px;
+  margin-top: 40px;
+}
+
+.about p strong {
+  color: rgb(128, 128, 128);
 }
